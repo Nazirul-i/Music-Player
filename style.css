@@ -20,12 +20,11 @@ body{
 }
 
 #sideBarContainer{
-    
     background-color: #181818;
     border-radius: 16px;
     display: flex;
     flex-direction: column;
-    margin: 4px;
+    margin: 8px;
     height: 100vmax;
     width: 30vw;
     min-width: 300px;
@@ -57,10 +56,15 @@ body{
 }
 
 #mainContent{
-    border: 2px solid red;
     background-color: #181818;
-    display: flex;
+    border-radius: 16px;
     width: 70vw;
+    margin: 8px 0px;
+}
+
+.cardCarosel{
+    display: flex;
+     padding: 16px;
 }
 
 .playlistCard{
