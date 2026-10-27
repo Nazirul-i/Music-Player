@@ -62,3 +62,22 @@ body{
     display: flex;
     width: 70vw;
 }
+
+.playlistCard{
+    background-color: #303030;
+    border-radius: 12px;
+    height: fit-content;
+    margin: 12px;
+    padding: 12px;
+}
+
+.playlistName{
+    margin: 10px 0px;
+    font-size: large;
+}
+
+.playlistImage{
+    border-radius: 4px ;
+    height: 14em;
+    width: 12em;
+}
