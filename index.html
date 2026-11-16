@@ -9,44 +9,134 @@
 </head>
 
 <body>
-    <div id="navContainer">
 
-    </div>
-    <div id="contentArea">
-        <div id="sideBarContainer">
-            <div id="libraryCardContainer">
-                <div class="titleText">Your Library</div>
-                <div class="libraryCard">
-                    <div class="title">Create Your First Playlist</div>
-                    It's easy, we'll help you
-                    <div><button class="whiteButton">Create Playlist</button></div>
+    <div id="mainWrapper" class="">
+
+        <div id="topBar" class="">
+            <div id="logo"></div>
+
+            <div id="topBarInfoWrapper">
+                <div id="topBarLeft" class="">
+                    <div id="homeIconWrapper" class=""></div>
+                    <div id="searchBar" class=""></div>
                 </div>
-                <div class="libraryCard">
-                    <div class="title">Let's find some podcasts for you</div>
-                    We'll keep you updated on new episodes
-                    <div><button class="whiteButton">Browse Podcasts</button></div>
-                </div>
-            </div>
-        </div>
 
-        <div id="mainContent">
-            <div class="titleText">Playlist</div>
-            <div class="cardCarosel">
-
-                <div class="playlistCard">
-                    <div class="playlistImage">
-                        <img class="playlistImage" src="link-to-be-given" alt="Playlist Image">
+                <div id="topBarRight">
+                    <div id="navBar" class="">
+                        <ul>
+                            <li>Premium</li>
+                            <li>Support</li>
+                            <li>Download</li>
+                        </ul>
+                        <img src="../res/tally-1.svg">
+                        <span>Install App</span>
+                        <span>Sign up</span>
+                        <button id="loginBtn">Log in</button>
                     </div>
-                    <div class="playlistName">Title</div>
-                    <div class="playlistDesc">Disc . Time</div>
+                </div>
+            </div>
+        </div>
 
+        <div id="contentWrapper" class="">
 
+            <div id="sideBar" class="">
+                <div id="sideBarTitle">
+                    <span class="sectionTitle">Your Library</span>
+                    <div id="libraryAddIcon">
+                        <img src="../res/add.svg" alt="add to library icon">
+                    </div>
+                </div>
+
+                <div id="libraryCardsWrapper" class="">
+
+                    <div class="libraryIntroCard">
+
+                        <div class="textInfo">
+                            <span class="titleText">Create your first playlist</span>
+                            <span class="">It's easy, we'll help you</span>
+                        </div>
+                        <button>Create Playlist</button>
+                    </div>
+
+                    <div class="libraryIntroCard">
+
+                        <div class="textInfo">
+                            <span class="titleText">Let's find some podcasts to follow</span>
+                            <span class="">We'll keep you updated on new episodes</span>
+                        </div>
+                        <button>Browse podcasts</button>
+                    </div>
+                </div>
+
+                <div id="impLinks">
+                    <ul>
+                        <li>Legal</li>
+                        <li>Safety & Privacy Center</li>
+                        <li>Privacy Policy</li>
+                        <li>Cookies</li>
+                        <li>About Ads</li>
+                        <li>Accessibility</li>
+                    </ul>
                 </div>
             </div>
 
+            <div id="contentArea" class="">
+
+                <div class="cardSection">
+
+                    <div class="rowTitle">
+
+                        <div class="rowTitleText">Trending Songs</div>
+                        <div class="showMore">Show all</div>
+
+                    </div>
+
+                    <div class="cardRow">
+                    <div class="albumCardWrapper">
+
+                        <div class="albumImg">
+                            <img src="https://cdn.pixabay.com/photo/2022/03/06/05/30/clouds-7050884_1280.jpg" alt="">
+                        </div>
+                        <div class="albumInfo">
+                            <div class="albumTitle titleText">Album 1</div>
+                            <span>name!,name2, name3</span>
+                        </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="cardSection">
+
+                    <div class="rowTitle">
+
+                        <div class="rowTitleText">Popular Artists</div>
+                        <div class="showMore">Show all</div>
+
+                    </div>
+
+                    <div class="cardRow">
+                    <div class="singerCardWrapper">
+
+                        <div class="singerImg">
+                            <img src="https://cdn.pixabay.com/photo/2022/03/06/05/30/clouds-7050884_1280.jpg" alt="">
+                        </div>
+                        <div class="singerInfo">
+                            <div class="singerTitle titleText">Album 1</div>
+                            <span>name!,name2, name3</span>
+                        </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+            </div>
         </div>
 
     </div>
+
 </body>
 
 </html>

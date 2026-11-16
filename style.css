@@ -1,6 +1,7 @@
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 body{
@@ -9,79 +10,252 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-#navContainer{
-    display: flex;
-    border: 2px solid red;
-    height: 48px;
+.helper{
+    border: 2px solid rgb(177, 77, 77);
 }
 
-#contentArea{
-    display: flex;
-}
-
-#sideBarContainer{
-    background-color: #181818;
-    border-radius: 16px;
+#mainWrapper{
+    height: 100vh;
     display: flex;
     flex-direction: column;
-    margin: 8px;
-    height: 100vmax;
-    width: 30vw;
-    min-width: 300px;
+    overflow: hidden;
 }
 
-.libraryCard{
-    background-color: #303030;
-    margin: 26px 8px;
-    padding: 20px 20px;
-    border-radius: 16px;
+#topBar{
+    height: 60px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    margin: 4px;
+}
+
+#logo{
+    height: 48px;
+    width: 48px;
+    margin: 20px;
+    background: #303030;
+    border-radius: 50%;
+}
+
+#topBarInfoWrapper{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#topBarLeft{
+    width: 600px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+#homeIconWrapper{
+    height: 48px;
+    width: 48px;
+    background: #303030;
+    border-radius: 50%;
+}
+
+#searchBar{
+    width: 90%;
+    height: 96%;
+    background: #333333;
+    border-radius: 60px;
+}
+
+#navBar{
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+#loginBtn{
+    border: none;
+    padding: 16px 32px;
+    border-radius: 40px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#navBar ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    height: 40px;
+    padding: 0;
+    gap: 12px;
+}
+
+#navBar img{
+    height: 30px;
+    filter: invert(1);
+}
+
+#contentWrapper{
+    flex: 1;
+    display: flex;
+    gap: 8px;
+    margin: 0px 8px;
+}
+
+
+
+#sideBar{
+    min-width: 300px;
+    max-width: 340px;
+    background: #2a2a2a;
+    border-radius: 4px;
+    position: relative;
+}
+
+
+
+
+#contentArea{
+    flex: 1 ;
+    background: #2a2a2a;
+    border-radius: 4px;
+}
+
+#sideBarTitle{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+#libraryAddIcon img{
+    height: 32px;
+}
+
+#libraryCardsWrapper{
+    margin: 40px 0px;
+}
+
+.libraryIntroCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 120px;
+    border-radius: 8px;
+    background: #333333;
+    padding: 16px;
+    margin: 20px 10px;
+}
+
+.textInfo{
+    display: flex;
+    flex-direction: column;
+    height: 40%;
+    gap: 8px;
+    justify-content: space-around;
+    font-size: small;
+    font-weight: bold;
 }
 
 .titleText{
-    font-weight: bold;
-    padding: 20px;
-}
-
-.title{
-    padding-bottom: 10px;
+    font-size: 12px;
     font-weight: bold;
 }
 
-.whiteButton{
+.libraryIntroCard button{
     border: none;
-    background-color: #ededed;
-    margin: 16px 0px 0px 0px;
-    padding: 10px 20px;
-    border-radius: 20px;
+    width: fit-content;
+    padding: 8px 16px;
+    border-radius: 40px;
+    font-size: 10px;
+    font-weight: bold;
 }
 
-#mainContent{
-    background-color: #181818;
-    border-radius: 16px;
-    width: 70vw;
+
+#impLinks{
+    margin: 10px 24px 10px 10px;
+    position: absolute;
+    bottom: 30px;
+}
+
+#impLinks ul{
+    padding: 0px;
+    list-style: none;
+    display: flex;
+    gap: 12px 16px;
+    flex-wrap: wrap;
+}
+
+#impLinks li{
+    font-size: small;
+    white-space: normal;
+    color: #acacac;
+}
+
+
+/* content Area */
+
+.rowTitle{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+}
+
+.rowTitleText{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.cardRow{
+    height: 300px;
+    display: flex;
+    gap: 20px;
+    margin: 20px;
+}
+
+.albumCardWrapper{
+    width: 200px;
+    padding: 10px;
+    height: fit-content;
+    border-radius: 10px;
+}
+
+.albumImg{
+    width: 180px;
+    margin: 16px 0px;
+    aspect-ratio: 1;
+    border-radius: 4px ;
+    overflow: hidden;
+}
+
+.albumImg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.albumTitle{
     margin: 8px 0px;
 }
 
-.cardCarosel{
-    display: flex;
-     padding: 16px;
-}
-
-.playlistCard{
-    background-color: #303030;
-    border-radius: 12px;
+.singerCardWrapper{
+    width: 200px;
+    padding: 10px;
     height: fit-content;
-    margin: 12px;
-    padding: 12px;
+    border-radius: 10px;
 }
 
-.playlistName{
-    margin: 10px 0px;
-    font-size: large;
+.singerImg {
+    width: 180px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    overflow: hidden;
 }
 
-.playlistImage{
-    border-radius: 4px ;
-    height: 14em;
-    width: 12em;
+.singerImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.singerTitle{
+    margin: 8px 0px;
 }
